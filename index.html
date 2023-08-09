@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="//db.onlinewebfonts.com/c/292df6ade1b43416ac9a3c24e65c41d4?family=Old+School+Adventures" rel="stylesheet" type="text/css"/>
+
+    <title>RPG Game</title>
+</head>
+<body>
+    <div id="menu" class="pixel-corners-big">
+        <div id="welcome-page-div">
+            <div id="welcome-text-div" class="pixel-corners-big">
+                <h1 class="welcome-text title">Welcome to my HTML rpg!</h1>
+                <h2 class="welcome-text subtitle">Choose your character</h2>
+            </div>
+            <div id="choose-character-div">
+                <button class="character-div m pixel-corners-big">
+                    <img src="src/male_idle.png" class="character-photo-menu m">
+                </button>
+                <button class="character-div f pixel-corners-big">
+                    <img src="src/female_idle.png" class="character-photo-menu f">
+                </button>
+            </div>
+        </div>
+        <div id="town-center-div">
+            <img src="src/town_square.png" id="background-photo">
+        </div>
+        <div id="monster-pic-div">
+            <img id="monster-pic" src="src/slime.png" height="500" width="500">
+        </div>
+        <div id="big-hud">
+            <div id="monster-stats-div">
+                <span class="monster-stats">Monster Name: <strong><span id="monster-name-text"></span></strong></span>
+                <span class="monster-stats">Monster Health: <strong><span id="monster-health-text"></span></strong></span>
+            </div>
+
+            <div id="hud">
+                <div id="lower-part">
+                    <div id="character-pic-div" class="pixel-corners-big">
+                        <img src="src/male_face.png" id="character-small-photo" width="125" height="125">
+                    </div>
+                    <div id="text-buttons" class="pixel-corners-big">
+                        <span id="main-text">Welcome to Dragon Repeller. You must defeat the dragon that is preventing people from leaving the town. You are in the town square. Where do you want to go? Use the buttons below.</span>
+                        <div id="buttons">
+                            <button id="button1" class="function-button pixel-corners">Go to Store</button>
+                            <button id="button2" class="function-button pixel-corners">Go to Cave</button>
+                            <button id="button3" class="function-button pixel-corners">Fight Dragon</button>
+                        </div>
+                    </div>
+                    <div id="stats-div" class="pixel-corners-big">
+                        <div id="health-div" class="stats pixel-corners-big">
+                            <img src="src/heart.png" id="health-stat-pic" class="stat-pic" width="20" height="20">
+                            <span id="health-stat-text" class="stat-text">100</span>
+                        </div>
+                        <div id="gold-div" class="stats pixel-corners-big">
+                            <img src="src/gold.png" id="gold-stat-pic" class="stat-pic" width="20" height="20">
+                            <span id="gold-stat-text" class="stat-text">10</span>
+                        </div>
+                        <div id="xp-div" class="stats pixel-corners-big">
+                            <img src="src/xp.png" id="xp-stat-pic" class="stat-pic" width="25" height="20">
+                            <span id="xp-stat-text" class="stat-text">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>

@@ -1,0 +1,323 @@
+@import url("https://db.onlinewebfonts.com/c/292df6ade1b43416ac9a3c24e65c41d4?family=Old+School+Adventures");
+@font-face {
+    font-family: "Old School Adventures"; src:
+        url("https://db.onlinewebfonts.com/t/292df6ade1b43416ac9a3c24e65c41d4.eot");  src:
+        url("https://db.onlinewebfonts.com/t/292df6ade1b43416ac9a3c24e65c41d4.eot?#iefix") format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/292df6ade1b43416ac9a3c24e65c41d4.woff2") format("woff2"),
+        url("https://db.onlinewebfonts.com/t/292df6ade1b43416ac9a3c24e65c41d4.woff") format("woff"),
+        url("https://db.onlinewebfonts.com/t/292df6ade1b43416ac9a3c24e65c41d4.ttf") format("truetype"),
+        url("https://db.onlinewebfonts.com/t/292df6ade1b43416ac9a3c24e65c41d4.svg#Old School Adventures") format("svg");
+}
+html {
+    background-color: darkblue;
+    background-image: url("src/background.jpg");
+    font-family: "Old School Adventures";
+}
+
+.pixel-corners-big {
+    clip-path: polygon(
+            0px calc(100% - 4px),
+            4px calc(100% - 4px),
+            4px 100%,
+            calc(100% - 4px) 100%,
+            calc(100% - 4px) calc(100% - 4px),
+            100% calc(100% - 4px),
+            100% 4px,
+            calc(100% - 4px) 4px,
+            calc(100% - 4px) 0px,
+            4px 0px,
+            4px 4px,
+            0px 4px
+    );
+}
+
+
+
+.pixel-corners,
+.pixel-corners--wrapper {
+    clip-path: polygon(0px calc(100% - 4px),
+    4px calc(100% - 4px),
+    4px 100%,
+    calc(100% - 4px) 100%,
+    calc(100% - 4px) calc(100% - 4px),
+    100% calc(100% - 4px),
+    100% 4px,
+    calc(100% - 4px) 4px,
+    calc(100% - 4px) 0px,
+    4px 0px,
+    4px 4px,
+    0px 4px);
+    position: relative;
+}
+.pixel-corners {
+    border: 4px solid transparent;
+}
+.pixel-corners--wrapper {
+    width: fit-content;
+    height: fit-content;
+}
+.pixel-corners--wrapper .pixel-corners {
+    display: block;
+    clip-path: polygon(4px 4px,
+    calc(100% - 4px) 4px,
+    calc(100% - 4px) calc(100% - 4px),
+    4px calc(100% - 4px));
+}
+.pixel-corners::after,
+.pixel-corners--wrapper::after {
+    content: "";
+    position: absolute;
+    clip-path: polygon(0px calc(100% - 4px),
+    4px calc(100% - 4px),
+    4px 100%,
+    calc(100% - 4px) 100%,
+    calc(100% - 4px) calc(100% - 4px),
+    100% calc(100% - 4px),
+    100% 4px,
+    calc(100% - 4px) 4px,
+    calc(100% - 4px) 0px,
+    4px 0px,
+    4px 4px,
+    0px 4px,
+    0px 50%,
+    4px 50%,
+    4px 4px,
+    calc(100% - 4px) 4px,
+    calc(100% - 4px) calc(100% - 4px),
+    4px calc(100% - 4px),
+    4px 50%,
+    0px 50%);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #ff9000;
+    display: block;
+    pointer-events: none;
+}
+.pixel-corners::after {
+    margin: -4px;
+}
+
+button {
+    border: none;
+    font-size: 10px;
+    font-family: "Old School Adventures";
+}
+
+#menu {
+    position: absolute;
+    background-color: lightgray;
+    border: gray 5px solid;
+
+    left: 10%;
+    top: 5%;
+    width: 80%;
+    height: 90%;
+}
+
+#welcome-page-div {
+    width: 100%;
+}
+
+#welcome-text-div {
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    margin: auto;
+    margin-top: 50px;
+
+    background-color: orange;
+    border: darkorange 4px solid;
+
+
+    width: 80%;
+    height: 200px;
+}
+
+.welcome-text {
+    margin: 10px;
+
+    text-align: center;
+    vertical-align: center;
+}
+
+.title {
+    font-size: 50px;
+}
+
+.subtitle {
+    font-size: 40px;
+}
+
+#choose-character-div {
+    margin: auto;
+    margin-top: 70px;
+
+    width: 80%;
+    height: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 150px;
+}
+
+.character-div {
+    background-color: orange;
+    border: darkorange 4px solid;
+
+    z-index: 1;
+
+    width: 250px;
+    height: 250px;
+}
+
+.character-photo-menu{
+    height: 100%;
+    width: 70%;
+
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+#background-photo {
+    display: none;
+    width: 100%;
+    height: 600px;
+}
+
+
+#character-pic-div, #stats-div {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+
+    margin-top: 10px;
+    width: 125px;
+    height: 125px;
+    background-color: black;
+}
+
+
+#text-buttons {
+    margin-top: 10px;
+    text-align: center;
+
+    padding: 0 10px;
+    background-color: black;
+    color: white;
+    width: calc(100% - 400px);
+    height: 125px;
+}
+
+#main-text {
+    margin-top: 10px;
+}
+
+#lower-part {
+    display: flex;
+    flex-direction: row;
+
+    gap: 80px;
+    height: 90%;
+    width: 95%;
+    margin: 0 2.5%;
+}
+
+#hud {
+     display: none;
+     position: absolute;
+     background-color: orange;
+     box-shadow: darkorange 0px 10px;
+
+     width: 100%;
+     height: 150px;
+
+     justify-content: center;
+     align-items: center;
+
+     bottom: 10px;
+ }
+
+#buttons {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    gap: 5px;
+}
+
+
+.function-button {
+    background-color: orange;
+    box-shadow: darkorange 2px 2px;
+
+    width: 200px;
+    height: 30px;
+}
+
+.stats {
+    background-color: orange;
+    width: 80%;
+    height: 22px;
+
+    display: flex;
+    font-size: 15px;
+
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+
+    gap: 5px;
+}
+
+#stats-div {
+    display: flex;
+
+    flex-direction: column;
+    gap: 15px;
+}
+
+.stat-text {
+    width: 50px;
+}
+
+#monster-stats-div {
+    display: none;
+    background-color: red;
+    width: 100%;
+    height: 50px;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    gap: 500px;
+}
+
+.monster-stats {
+    margin-bottom: 12px;
+}
+
+#big-hud {
+    bottom: 0;
+    position: absolute;
+    height: 200px;
+    width: 100%;
+}
+
+#monster-pic {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 10%;
+    z-index: 2;
+}
